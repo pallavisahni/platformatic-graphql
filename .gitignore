@@ -1,0 +1,39 @@
+# Build outputs
+dist/
+build/
+out/
+
+# IDE - Integrated Development Environment folders
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Operating system generated files
+.DS_Store
+.DS_Store?
+
+# dotenv environment variable files
+.env
+.env.local
+
+# database files
+*.sqlite
+*.sqlite3
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# ctags
+tags
+
+# clinicjs
+.clinic/

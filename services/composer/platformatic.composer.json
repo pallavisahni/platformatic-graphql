@@ -1,0 +1,43 @@
+{
+  "$schema": "https://platformatic.dev/schemas/v1.39.0/composer",
+  "composer": {
+    "graphql": {
+      "graphiql": true
+    },
+    "services": [
+      {
+        "id": "iam-dummy",
+        "graphql": true,
+        "openapi": {
+          "url": "/documentation/json"
+        }
+      },
+      {
+        "id": "dummy-service",
+        "graphql": true,
+        "openapi": {
+          "url": "/documentation/json"
+        }
+      },
+      {
+        "id": "demo-service",
+        "graphql": true,
+        "openapi": {
+          "url": "/documentation/json"
+        }
+      }
+    ],
+    "refreshTimeout": 1000
+  },
+  "watch": true,
+  "plugins": {
+    "paths": [
+      {
+        "path": "./plugins",
+        "encapsulate": false
+      },
+      "./routes"
+    ],
+    "typescript": "{PLT_COMPOSER_TYPESCRIPT}"
+  }
+}
